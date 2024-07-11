@@ -9,11 +9,12 @@ body {
     max-width: 600px;
     background-color: #ffffff;
     margin: auto;
+    width: 100%;
 }
 
 .header {
     background-color: #0073e6;
-    padding: 20px;
+    padding: 10px;
 }
 
 .header img {
@@ -28,33 +29,27 @@ body {
 
 h1 {
     color: #333;
+    font-size: 24px;
+    margin: 0 0 10px 0;
 }
 
 h2 {
     color: #555;
+    font-size: 20px;
+    margin: 0 0 20px 0;
 }
 
 p {
     color: #777;
     line-height: 1.6;
-}
-
-.image-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 20px;
+    margin: 0 0 20px 0;
 }
 
 .responsive-img {
     max-width: 100%;
     height: auto;
-    margin-right: 20px;
-    flex: 1;
-}
-
-.image-text {
-    flex: 2;
+    display: block;
+    margin: 20px 0;
 }
 
 .cta-button {
@@ -73,6 +68,123 @@ p {
     text-align: center;
 }
 
+.unsubscribe {
+    color: white;
+}
+
+.unsubscribe a {
+    color: red;
+}
+
+.social-media-icons {
+    margin: 20px 0;
+}
+
 .social-media-icons img {
     margin: 0 10px;
+    vertical-align: middle;
+}
+
+.un-sub {
+    margin: 10px 0;
+}
+
+@media (max-width: 480px) {
+    /* Mobile View */
+    .main-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .social-media-icons img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Tablet View */
+    .main-content {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .cta-button {
+        padding: 12px 18px;
+        font-size: 16px;
+    }
+
+    .social-media-icons img {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Laptop View */
+    .main-content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .cta-button {
+        padding: 14px 22px;
+        font-size: 18px;
+    }
+
+    .social-media-icons img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Desktop View */
+    .main-content {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .cta-button {
+        padding: 16px 24px;
+        font-size: 20px;
+    }
+
+    .social-media-icons img {
+        width: 26px;
+        height: 26px;
+    }
 }
